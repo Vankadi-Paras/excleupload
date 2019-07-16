@@ -58,7 +58,7 @@ public class ExcleUpload
 			paramMap.put("defid", userid1);
 			
 			String filename = String.valueOf(dbUtils.returnResultSet("SELECT excelfile FROM `tablename` WHERE `id`=" + userid1, null).get(0));
-
+String Filename1="EXCEL"+String.valueOf(new Random().nextInt());
 			List<?> resultList = dbUtils.returnResultSet(sql, paramMap);
 			
 			paramMap.clear();
